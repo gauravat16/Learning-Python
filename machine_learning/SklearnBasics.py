@@ -20,8 +20,8 @@ x = data.drop('quality', axis=1)
 
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=123, stratify=y)
 
-if os.path.isfile('data/rf_regressor.pkl'):
-    clf2 = joblib.load('data/rf_regressor.pkl')
+if os.path.isfile('../data/rf_regressor.pkl'):
+    clf2 = joblib.load('../data/rf_regressor.pkl')
 
     print(clf2.predict(x_test))
 
